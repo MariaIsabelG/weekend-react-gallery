@@ -5,12 +5,11 @@ function GalleryList({itemList, getItems, picLikes}) {
 
     return (
 
-        <div>        
+        <>        
             {itemList.map((item, i) =>
             <>
-            <img key={i} className="images" src={item.path}/>
             <GalleryItem
-            key={item.id}
+            itemKey={item.id}
             item={item}
             itemPath={item.path}
             itemDescription={item.description}
@@ -19,7 +18,7 @@ function GalleryList({itemList, getItems, picLikes}) {
             picLikes={picLikes}/>
             </>
             )}    
-        </div>
+        </>
     )    
 };
 
