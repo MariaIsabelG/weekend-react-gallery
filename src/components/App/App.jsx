@@ -42,17 +42,17 @@ useEffect(() => {
 
 
     return (
+      
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
 
-
-        <p>Gallery goes here</p>
         {itemList.map((item, i) => {
-            return (<img key={i} src={item.path}/>)
+            return (<img key={i} className="images" src={item.path}/>)
         })}  
       </div>
+
     );
 }
 
