@@ -29,6 +29,7 @@ useEffect(() => {
 };
 
 //PUT request
+// Added parameter of an ID
 const picLikes = (id) => {
   axios.put(`/gallery/like/${id}`)
       .then(response => getItems())

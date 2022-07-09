@@ -1,13 +1,13 @@
 import {useState} from 'react';
 
 function GalleryItem ({ item, picLikes }) {
-
+// State for toggling functionality
     const [hidden, setHidden] = useState(true);
-    
+// Function that connects to PUT request in App.jsx    
     const handleLikes = () => {
         picLikes(item.id);
     };
-    
+// Function that handles the toggling of likes    
     const handleDescription = () => {
         setHidden(!hidden);
     }
