@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  font-family: fantasy;
+  font-weight: 800;
+}
+
+body{
+  background-color: rgb(184, 162, 136);
 }
 
 .App-header {
@@ -14,7 +20,22 @@
 }
 
 .images{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
 }
+
+.likeBtn{
+  background-color: rgb(239, 235, 171);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+#container{
+  display: inline-block;
+  margin: 10px;
+}
+
+
 

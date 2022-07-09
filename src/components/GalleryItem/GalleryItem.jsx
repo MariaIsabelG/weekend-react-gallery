@@ -15,15 +15,15 @@ function GalleryItem ({ item, picLikes }) {
 
     return (
         <>
-        <div onClick={handleDescription}>
-            {hidden ?
-            <img key={item.id} className="images" src={item.path}/> :
-            <p>{item.description}</p>}
-        </div>
-        <div className="likeBtn">
-            <button onClick={handleLikes}>💜</button> 
-            <p>Likes <span>{item.likes}</span></p>
-        </div>
+        <div id="container">
+            <div onClick={handleDescription}>
+                {hidden ?
+                <img className="images" src={item.path}/> :
+                <p>{item.description}</p>}
+            </div>
+                <button className="likeBtn" onClick={handleLikes}>💙</button> 
+                <p className="likes">Likes <span>{item.likes}</span></p>
+            </div>
         </>
     )
 };

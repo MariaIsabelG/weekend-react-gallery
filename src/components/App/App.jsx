@@ -35,20 +35,9 @@ const picLikes = (id) => {
       .catch(error => console.log('Error PUTting', error))
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
     return (
       
+      <body>
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
@@ -58,7 +47,7 @@ const picLikes = (id) => {
         getItems={getItems}
         picLikes={picLikes}/>
       </div>
-
+      </body>
     );
 }
 
