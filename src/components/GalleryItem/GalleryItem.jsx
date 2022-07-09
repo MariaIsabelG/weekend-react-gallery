@@ -1,19 +1,23 @@
 import {useState} from 'react';
 
-function GalleryItem ({itemKey, item, itemPath, itemDescription, itemLikes, getItems, picLikes }) {
+function GalleryItem ({ item, picLikes }) {
 
-    const [likes, setLikes] = useState(0);
-
+    console.log( 'These are props:', item);
+    
     const handleLikes = () => {
-        setLikes( likes + 1);
-    }
+        picLikes(item.id);
+    };
+    
+    
+
+
 
     return (
         <div>
-            <img key={itemKey} className="images" src={item.path}/>
+            <img key={item.id} className="images" src={item.path}/>
                 <div className="likeBtn">
                     <button onClick={handleLikes}>💜</button> 
-                    <p>Likes <span>{likes}</span></p>
+                    <p>Likes <span>{item.likes}</span></p>
                 </div>
         </div>
     )

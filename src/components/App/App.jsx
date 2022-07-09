@@ -5,10 +5,10 @@ import GalleryList from '../GalleryList/GalleryList'
 
 
 
-
 function App() {
 
   let [ itemList, setItemList ] = useState( [] );
+
 
 useEffect(() => {
     
@@ -29,8 +29,8 @@ useEffect(() => {
 };
 
 //PUT request
-const picLikes = () => {
-  axios.put(`/list`)
+const picLikes = (id) => {
+  axios.put(`/gallery/like/${id}`)
       .then(response => getItems())
       .catch(error => console.log('Error PUTting', error))
 };
