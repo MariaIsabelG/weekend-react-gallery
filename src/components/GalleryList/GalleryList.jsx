@@ -9,10 +9,10 @@ function GalleryList({ itemList, getItems, picLikes}) {
         <>        
             {itemList.map((item) =>
             <GalleryItem
+            key={item.id}
             item={item}
             getItems={getItems}
             picLikes={picLikes}/>
-
             )}    
         </>
     )    
