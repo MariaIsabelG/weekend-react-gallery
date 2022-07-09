@@ -1,17 +1,16 @@
 // import GalleryItem from '../GalleryItem/GalleryItem';
 
 
-// function GalleryList(itemList) {
+function GalleryList({itemList}) {
 
-//     return (
-//         <>
-//         <div id="itemList">        
-//             {itemList.map(item, i => {
-//             return(<li key={i}>{item.path}</li>)}
-//             )}
-//         </div>
-//         </>
-//     )    
-// } ;
+    return (
 
-// export default GalleryList;
+        <div>        
+            {itemList.map((item, i) => {
+            return (<img key={i} className="images" src={item.path}/>)
+            })} 
+        </div>
+    )    
+};
+
+export default GalleryList;

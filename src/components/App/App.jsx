@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
+import GalleryList from '../GalleryList/GalleryList'
 
 
 
@@ -47,10 +48,8 @@ useEffect(() => {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-
-        {itemList.map((item, i) => {
-            return (<img key={i} className="images" src={item.path}/>)
-        })}  
+        <GalleryList
+        itemList={itemList}/>
       </div>
 
     );
