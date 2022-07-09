@@ -1,14 +1,14 @@
 
 
-// function GalleryItem ({item}) {
-  
-//     return (
-//         <div className="galleryItem">
-//             <img src={item.path}/>
+function GalleryItem ({key, item, itemPath, itemDescription, itemLikes, getItems, picLikes }) {
+
+    return (
+        <div className="galleryItem">
+
 
     
-//         </div>
-//     )
-// };
+        </div>
+    )
+};
 
-//export default GalleryItem;
+export default GalleryItem;

@@ -28,7 +28,12 @@ useEffect(() => {
     })
 };
 
-
+//PUT request
+const picLikes = () => {
+  axios.put(`/list`)
+      .then(response => getItems())
+      .catch(error => console.log('Error PUTting', error))
+};
 
 
 
@@ -49,7 +54,9 @@ useEffect(() => {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <GalleryList
-        itemList={itemList}/>
+        itemList={itemList}
+        getItems={getItems}
+        picLikes={picLikes}/>
       </div>
 
     );
